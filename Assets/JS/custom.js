@@ -41,3 +41,7 @@ window.addEventListener("resize", () => {
 function addHaderHeight(el) {
     $(el).css("height",`calc(100vh - ${headerHeight}px)`)
 }
+
+
+/* tabs */
+$("#cardTabs").tabs()

@@ -34,3 +34,10 @@
         @apply max-w-[var(--widthContent)]
     } 
 }
+
+.ui-tabs-active.cardToggler {
+    @apply bg-white
+}
+.ui-tabs-active.cardToggler::after {
+    @apply bg-white
+}
