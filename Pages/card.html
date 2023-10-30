@@ -201,7 +201,7 @@
                             </tbody>
                         </table>
                    </div>
-                   <button class="flex items-center gap-2.5 text-white font-medium rounded-lg bg-[#1F75A8] w-fit py-2 px-5 self-end">
+                   <button id="addWorkerToggler" class="flex items-center gap-2.5 text-white font-medium rounded-lg bg-[#1F75A8] w-fit py-2 px-5 self-end">
                         <img src="/Assets/Images/icons/plus.svg" alt="">
                         <span>Добавить </span>
                    </button>
@@ -219,6 +219,40 @@
                 <button class="py-2 px-7 text-white bg-[#E71616] rounded-lg">Отмена</button>
             </div>
         </div>
+        <div class="hidden" id="addWorkerPopup">
+            <div class="fixed inset-0 w-full h-screen bg-black/40 flex items-center justify-center px-6">
+                <div class="flex flex-col bg-white gap-6 px-6 xl:px-9 py-6 rounded-[24px] font-medium w-full md:max-w-[400px]">
+                    <button id="addWorkerClose" class="self-end">
+                        <img src="/Assets/Images/icons/close.svg" alt="">
+                    </button>
+                    <label class="flex flex-col gap-1">
+                        <span class="pl-2.5 text-sm">Исполнитель</span>
+                        <input type="text" class="rounded-lg border border-[#D1CFD7] py-2 px-4 w-full" placeholder="Введите ФИО">
+                    </label>
+                    <label class="flex flex-col gap-1">
+                        <span class="pl-2.5 text-sm">Операция</span>
+                        <select type="text" class="rounded-lg border border-[#D1CFD7] py-2 px-4 w-full">
+                            <option value="Упаковка">Упаковка</option>
+                            <option value="Упаковка">Упаковка</option>
+                            <option value="Упаковка">Упаковка</option>
+                        </select>
+                    </label>
+                    <label class="flex flex-col gap-1">
+                        <span class="pl-2.5 text-sm">Время начала</span>
+                        <input type="text" class="rounded-lg border border-[#D1CFD7] py-2 px-4 w-full" placeholder="00:00:00">
+                    </label>
+                    <label class="flex flex-col gap-1">
+                        <span class="pl-2.5 text-sm">Время окончания</span>
+                        <input type="text" class="rounded-lg border border-[#D1CFD7] py-2 px-4 w-full" placeholder="00:00:00">
+                    </label>
+                    <label class="flex flex-col gap-1">
+                        <span class="pl-2.5 text-sm">Цена</span>
+                        <input type="text" class="rounded-lg border border-[#D1CFD7] py-2 px-4 w-full" placeholder="Введите цену">
+                    </label>
+                    <button class="w-full rounded-lg text-white text-center bg-[#1F75A8] py-2">Сохранить</button>
+                </div>
+            </div>
+        </div>
     </main>    
     
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js" 
@@ -226,10 +260,5 @@
     crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 	<script src="/Assets/JS/custom.js"></script>
-    <script>
-        $( function() {
-          $( "#tabs" ).tabs();
-        } );
-        </script>
 </body>
 </html>

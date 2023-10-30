@@ -45,3 +45,9 @@ function addHaderHeight(el) {
 
 /* tabs */
 $("#cardTabs").tabs()
+
+
+/* addWorkers */
+$("#addWorkerToggler, #addWorkerClose").click(() => {
+    $("#addWorkerPopup").toggleClass("hidden")
+})
