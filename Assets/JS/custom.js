@@ -1,8 +1,43 @@
 /*jshint esnext: true */
-/* navigation */
-$("#toggler").click(()=>{
-  $("#menu").toggleClass("max-lg:-translate-y-full")
-  $("#menu").toggleClass("top-0")
-  $("#menu").toggleClass("top-full")
-  $("body").toggleClass("overflow-hidden")
+/* menu */
+$("#toggler").click(() => {
+    $("#menu").toggleClass("max-xl:top-0")
+    $("#menu").toggleClass("max-xl:top-full")
+    $("#menu").toggleClass("max-xl:-translate-y-full")
+    $("#toggler").toggleClass("h-3.5")
+    $("#toggler").toggleClass("h-5")
+    $("#toggler > :nth-child(1)").toggleClass("rotate-45")
+    $("#toggler > :nth-child(2)").toggleClass("opacity-0")
+    $("#toggler > :nth-child(3)").toggleClass("-rotate-45")
 })
+
+
+/* dropdowns */
+$(".dropdown").each((i, el) => {
+    const dropdownToggler = $(el).find(".dropdownToggler")
+    const dropdownInner = $(el).find(".dropdownInner")
+    $(dropdownToggler).click(() => {
+        $(dropdownInner).toggleClass("hidden")
+        if($(el).hasClass("dropdownProfile")) {
+            $(dropdownToggler).toggleClass("bg-[#F6F6F6]")
+            $(dropdownToggler).toggleClass("bg-[#1F75A8]")
+            $(dropdownToggler).find("svg:first").toggleClass("text-[#1D1D1D]")
+            $(dropdownToggler).find("svg:first").toggleClass("text-white")
+        } else if ($(el).hasClass("dropdownDefault")) {
+            $(dropdownToggler).find("svg:first").toggleClass("xl:group-hover:opacity-100")
+            $(dropdownToggler).find("svg:first").toggleClass("xl:opacity-100")
+        }
+    })
+})
+
+
+/* add class to element (header height) */
+let headerHeight = $("header").height()
+console.log(headerHeight)
+window.addEventListener("resize", () => {
+    headerHeight = $("header").height()
+    console.log(headerHeight)
+})
+function addHaderHeight(el) {
+    $(el).css("height",`calc(100vh - ${headerHeight}px)`)
+}

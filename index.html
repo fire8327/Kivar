@@ -4,34 +4,233 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Assets/CSS/custom.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Assets/CSS/output.css">
     <title>Главная</title>
 </head>
 <body>
-    <header class="w-full relative">
-        <div class="flex items-center justify-between container mx-auto px-4">
-            <a href="">
-                <img src="" alt="">
+    <header class="grid-container relative text-[#1D1D1D] font-semibold">
+        <div class="flex items-center gap-12 justify-between py-7">
+            <a href="/">
+                <img src="Assets/Images/header/logo.webp" alt="">
             </a>
-            <nav class="flex items-center gap-4 max-lg:flex-col bg-white max-lg:absolute max-lg:w-full top-0 left-0 max-lg:-translate-y-full transition-all duration-500 max-lg:py-4" id="menu">
-                <a href="">Home</a>
-                <a href="">About Us</a>
-                <a href="">Services</a>
-                <a href="">Pages</a>
-                <a href="">Contact Us</a>
-            </nav>
-            <button id="toggler" type="button" class="flex flex-col w-6 gap-1 lg:hidden">
-                <span class="w-full rounded-full bg-black h-0.5"></span>
-                <span class="w-full rounded-full bg-black h-0.5"></span>
-                <span class="w-full rounded-full bg-black h-0.5"></span>
+            <div class="flex items-center gap-8 max-xl:flex-col bg-white max-xl:h-screen max-xl:absolute max-xl:w-full max-xl:left-0 max-xl:z-40 transition-transform duration-500 max-xl:top-0 max-xl:-translate-y-full" id="menu"> 
+                <div class="xl:hidden w-full h-0.5 bg-[#000000]/10"></div> 
+                <div class="flex items-center gap-6 max-md:flex-col">
+                    <div class="relative group dropdown dropdownDefault">    
+                        <button class="flex items-center gap-4 dropdownToggler">
+                            <p>Отчеты</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon text-xl xl:opacity-0 transition-all duration-500 xl:group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24" data-v-4fa0a2a1="">
+                                <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6l-6-6l1.41-1.41z"></path>
+                            </svg>
+                        </button>
+                        <div class="hidden dropdownInner">
+                            <div class="absolute z-50 top-[calc(100%+10px)] shadow-[3px_2px_16px_0px_rgba(0,0,0,0.10)] w-fit flex flex-col rounded-lg transition-all duration-500 bg-white -translate-x-1/2 left-1/2">
+                                <a href="/" class="transition-all duration-500 hover:bg-gray-100 px-4 py-1.5 first:rounded-t-lg last:rounded-b-lg">Сотрудники</a>
+                                <a href="/" class="transition-all duration-500 hover:bg-gray-100 px-4 py-1.5 first:rounded-t-lg last:rounded-b-lg">Статусы</a>
+                                <a href="/" class="transition-all duration-500 hover:bg-gray-100 px-4 py-1.5 first:rounded-t-lg last:rounded-b-lg">Задачи</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group dropdown dropdownDefault">    
+                        <button class="flex items-center gap-4 dropdownToggler">
+                            <p>Операции</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon text-xl xl:opacity-0 transition-all duration-500 xl:group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24" data-v-4fa0a2a1="">
+                                <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6l-6-6l1.41-1.41z"></path>
+                            </svg>
+                        </button>
+                        <div class="hidden dropdownInner">
+                            <div class="absolute z-50 top-[calc(100%+10px)] shadow-[3px_2px_16px_0px_rgba(0,0,0,0.10)] w-fit flex flex-col rounded-lg transition-all duration-500 bg-white -translate-x-1/2 left-1/2">
+                                <a href="/" class="transition-all duration-500 hover:bg-gray-100 px-4 py-1.5 first:rounded-t-lg last:rounded-b-lg">content</a>
+                                <a href="/" class="transition-all duration-500 hover:bg-gray-100 px-4 py-1.5 first:rounded-t-lg last:rounded-b-lg">content</a>
+                                <a href="/" class="transition-all duration-500 hover:bg-gray-100 px-4 py-1.5 first:rounded-t-lg last:rounded-b-lg">content</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group dropdown dropdownDefault">    
+                        <button class="flex items-center gap-4 dropdownToggler">
+                            <p>Склад</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon text-xl xl:opacity-0 transition-all duration-500 xl:group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24" data-v-4fa0a2a1="">
+                                <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6l-6-6l1.41-1.41z"></path>
+                            </svg>
+                        </button>
+                        <div class="hidden dropdownInner">
+                            <div class="absolute z-50 top-[calc(100%+10px)] shadow-[3px_2px_16px_0px_rgba(0,0,0,0.10)] w-fit flex flex-col rounded-lg transition-all duration-500 bg-white -translate-x-1/2 left-1/2">
+                                <a href="/" class="transition-all duration-500 hover:bg-gray-100 px-4 py-1.5 first:rounded-t-lg last:rounded-b-lg">content</a>
+                                <a href="/" class="transition-all duration-500 hover:bg-gray-100 px-4 py-1.5 first:rounded-t-lg last:rounded-b-lg">content</a>
+                                <a href="/" class="transition-all duration-500 hover:bg-gray-100 px-4 py-1.5 first:rounded-t-lg last:rounded-b-lg">content</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group dropdown dropdownDefault">    
+                        <button class="flex items-center gap-4 dropdownToggler">
+                            <p>Справочник</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon text-xl xl:opacity-0 transition-all duration-500 xl:group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24" data-v-4fa0a2a1="">
+                                <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6l-6-6l1.41-1.41z"></path>
+                            </svg>
+                        </button>
+                        <div class="hidden dropdownInner">
+                            <div class="absolute z-50 top-[calc(100%+10px)] shadow-[3px_2px_16px_0px_rgba(0,0,0,0.10)] w-fit flex flex-col rounded-lg transition-all duration-500 bg-white -translate-x-1/2 left-1/2">
+                                <a href="/" class="transition-all duration-500 hover:bg-gray-100 px-4 py-1.5 first:rounded-t-lg last:rounded-b-lg">content</a>
+                                <a href="/" class="transition-all duration-500 hover:bg-gray-100 px-4 py-1.5 first:rounded-t-lg last:rounded-b-lg">content</a>
+                                <a href="/" class="transition-all duration-500 hover:bg-gray-100 px-4 py-1.5 first:rounded-t-lg last:rounded-b-lg">content</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="xl:hidden w-full h-0.5 bg-[#000000]/10"></div> 
+                <div class="flex max-md:flex-col max-md:gap-4 xl:items-center gap-2.5 max-xl:order-first">
+                    <div class="flex items-center gap-4 py-2 px-4 rounded-lg bg-[#F6F6F6]">
+                        <p class="shrink-0">Заработано</p>
+                        <p class="shrink-0 text-[#E71616]">0 руб.</p>
+                    </div>
+                    <div class="flex items-center gap-4 py-2 px-4 rounded-lg bg-[#F6F6F6]">
+                        <p class="shrink-0">К выплате</p>
+                        <p class="shrink-0 text-[#34B846]">1500 руб.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <div class="relative rounded-lg bg-[#F6F6F6] w-10 h-10 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon text-2xl" width="1em" height="1em" viewBox="0 0 24 24" data-v-4fa0a2a1="">
+                            <path fill="currentColor" d="M5 19q-.425 0-.713-.288T4 18q0-.425.288-.713T5 17h1v-7q0-2.075 1.25-3.688T10.5 4.2v-.7q0-.625.438-1.063T12 2q.625 0 1.063.438T13.5 3.5v.7q2 .5 3.25 2.113T18 10v7h1q.425 0 .713.288T20 18q0 .425-.288.713T19 19H5Zm7 3q-.825 0-1.413-.588T10 20h4q0 .825-.588 1.413T12 22ZM3 10q-.425 0-.713-.325t-.237-.75q.2-1.875 1.05-3.488t2.175-2.812q.325-.275.738-.25t.662.375q.25.35.2.75t-.375.7q-.975.925-1.6 2.15T4.075 9q-.05.425-.35.713T3 10Zm18 0q-.425 0-.725-.288T19.925 9q-.2-1.425-.825-2.65T17.5 4.2q-.325-.3-.375-.7t.2-.75q.25-.35.663-.375t.737.25q1.325 1.2 2.175 2.812t1.05 3.488q.05.425-.237.75T21 10Z"></path>
+                        </svg>
+                        <div class="absolute rounded-full flex items-center justify-center bg-black w-5 h-5 -top-2 -right-2">
+                            <p class="text-white text-sm">9</p>
+                        </div>
+                    </div>
+                    <div class="relative rounded-lg bg-[#F6F6F6] w-10 h-10 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon text-2xl" width="1em" height="1em" viewBox="0 0 24 24" data-v-4fa0a2a1="">
+                            <path fill="currentColor" d="M11.95 18q.525 0 .888-.363t.362-.887q0-.525-.362-.888t-.888-.362q-.525 0-.887.363t-.363.887q0 .525.363.888t.887.362Zm-.9-3.85h1.85q0-.825.188-1.3t1.062-1.3q.65-.65 1.025-1.238T15.55 8.9q0-1.4-1.025-2.15T12.1 6q-1.425 0-2.313.75T8.55 8.55l1.65.65q.125-.45.563-.975T12.1 7.7q.8 0 1.2.438t.4.962q0 .5-.3.938t-.75.812q-1.1.975-1.35 1.475t-.25 1.825ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"></path>
+                        </svg>
+                    </div>
+                    <div class="relative group dropdownProfile dropdown">
+                        <button class="relative rounded-lg w-10 h-10 flex items-center justify-center transition-colors duration-300 bg-[#F6F6F6] dropdownToggler">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon text-2xl transition-colors duration-300 text-[#1D1D1D]" width="1em" height="1em" viewBox="0 0 24 24" data-v-4fa0a2a1="">
+                                <path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175T8 8q0-1.65 1.175-2.825T12 4q1.65 0 2.825 1.175T16 8q0 1.65-1.175 2.825T12 12Zm-8 8v-2.8q0-.85.438-1.563T5.6 14.55q1.55-.775 3.15-1.163T12 13q1.65 0 3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2V20H4Z"></path>
+                            </svg>
+                            <span class="absolute rounded-full flex items-center justify-center bg-black w-5 h-5 -top-2 -right-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon text-white text-sm" width="1em" height="1em" viewBox="0 0 256 256" data-v-4fa0a2a1="">
+                                    <path fill="currentColor" d="M216 72h-35.08c.39-.33.79-.65 1.17-1A29.53 29.53 0 0 0 192 49.57A32.62 32.62 0 0 0 158.44 16A29.53 29.53 0 0 0 137 25.91a54.94 54.94 0 0 0-9 14.48a54.94 54.94 0 0 0-9-14.48A29.53 29.53 0 0 0 97.56 16A32.62 32.62 0 0 0 64 49.57A29.53 29.53 0 0 0 73.91 71c.38.33.78.65 1.17 1H40a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16v64a16 16 0 0 0 16 16h144a16 16 0 0 0 16-16v-64a16 16 0 0 0 16-16V88a16 16 0 0 0-16-16Zm-67-35.49a13.69 13.69 0 0 1 10-4.5h.49A16.62 16.62 0 0 1 176 49.08a13.69 13.69 0 0 1-4.5 10c-9.49 8.4-25.24 11.36-35 12.4c1.2-10.59 4.5-25.98 12.5-34.97Zm-64.09.36A16.63 16.63 0 0 1 96.59 32h.49a13.69 13.69 0 0 1 10 4.5c8.39 9.48 11.35 25.2 12.39 34.92c-9.72-1-25.44-4-34.92-12.39a13.69 13.69 0 0 1-4.5-10a16.6 16.6 0 0 1 4.82-12.16ZM40 88h80v32H40Zm16 48h64v64H56Zm144 64h-64v-64h64Zm16-80h-80V88h80v32Z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="hidden dropdownInner">
+                            <div class="absolute z-50 top-[calc(100%+10px)] shadow-[3px_2px_16px_0px_rgba(0,0,0,0.10)] w-fit flex flex-col rounded-lg transition-all duration-500 bg-white max-xl:left-1/2 max-xl:-translate-x-1/2 right-0">
+                                <a href="/" class="transition-all duration-500 hover:bg-gray-100 px-4 py-1.5 first:rounded-t-lg last:rounded-b-lg">Профиль</a>
+                                <a href="/" class="transition-all duration-500 hover:bg-gray-100 px-4 py-1.5 first:rounded-t-lg last:rounded-b-lg">Зар.плата</a>
+                                <button class="transition-all duration-500 hover:bg-gray-100 px-4 py-1.5 first:rounded-t-lg last:rounded-b-lg border-t border-[#D1CFD7] text-[#E71616]">Выйти</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+            <button id="toggler" class="flex flex-col justify-between w-[26px] transition-[height] ease-linear duration-100 xl:hidden h-3.5">
+                <span class="w-full h-0.5 bg-[#1D1D1D] rounded-[1px] origin-[0] transition-transform ease-linear duration-500"></span>
+                <span class="w-full h-0.5 bg-[#1D1D1D] rounded-[1px] transition-opacity ease-linear duration-500"></span>
+                <span class="w-full h-0.5 bg-[#1D1D1D] rounded-[1px] origin-[0] transition-transform ease-linear duration-500"></span>
             </button>
         </div>
-    </header>  
+    </header>
 
-    <footer>
-
-    </footer>
+    <main class="grid-container">
+        <div class="relative overflow-x-auto shadow-[0px_0px_13px_-7px_black] rounded-xl my-12 table">        
+            <table class="w-full text-left rounded-xl overflow-hidden">
+                <thead>
+                    <tr class="uppercase text-sm text-gray-600 bg-gray-100 border-b border-[#D1CFD7]">
+                        <th class="p-4">Id</th>
+                        <th class="p-4">Фото</th>
+                        <th class="p-4">Имя</th>
+                        <th class="p-4">Логин</th>
+                        <th class="p-4">Телефон</th>
+                        <th class="p-4">Email</th>
+                        <th class="p-4">Группа</th>
+                    </tr>
+                </thead>
+                <tbody class="font-normal">
+                    <tr class="transition-colors duration-300 hover:bg-gray-100">
+                        <th class="py-2 px-4">1</th>
+                        <th class="py-2 px-4"></th>
+                        <th class="py-2 px-4">Роман Никандров</th>
+                        <th class="py-2 px-4">admin</th>
+                        <th class="py-2 px-4">+7(927)865-33-55</th>
+                        <th class="py-2 px-4">chnry@yandex.ru</th>
+                        <th class="py-2 px-4">Администратор</th>
+                    </tr>
+                    <tr class="transition-colors duration-300 hover:bg-gray-100">
+                        <th class="py-2 px-4">1</th>
+                        <th class="py-2 px-4"></th>
+                        <th class="py-2 px-4">Роман Никандров</th>
+                        <th class="py-2 px-4">admin</th>
+                        <th class="py-2 px-4">+7(927)865-33-55</th>
+                        <th class="py-2 px-4">chnry@yandex.ru</th>
+                        <th class="py-2 px-4">Администратор</th>
+                    </tr>
+                    <tr class="transition-colors duration-300 hover:bg-gray-100">
+                        <th class="py-2 px-4">1</th>
+                        <th class="py-2 px-4"></th>
+                        <th class="py-2 px-4">Роман Никандров</th>
+                        <th class="py-2 px-4">admin</th>
+                        <th class="py-2 px-4">+7(927)865-33-55</th>
+                        <th class="py-2 px-4">chnry@yandex.ru</th>
+                        <th class="py-2 px-4">Администратор</th>
+                    </tr>
+                    <tr class="transition-colors duration-300 hover:bg-gray-100">
+                        <th class="py-2 px-4">1</th>
+                        <th class="py-2 px-4"></th>
+                        <th class="py-2 px-4">Роман Никандров</th>
+                        <th class="py-2 px-4">admin</th>
+                        <th class="py-2 px-4">+7(927)865-33-55</th>
+                        <th class="py-2 px-4">chnry@yandex.ru</th>
+                        <th class="py-2 px-4">Администратор</th>
+                    </tr>
+                    <tr class="transition-colors duration-300 hover:bg-gray-100">
+                        <th class="py-2 px-4">1</th>
+                        <th class="py-2 px-4"></th>
+                        <th class="py-2 px-4">Роман Никандров</th>
+                        <th class="py-2 px-4">admin</th>
+                        <th class="py-2 px-4">+7(927)865-33-55</th>
+                        <th class="py-2 px-4">chnry@yandex.ru</th>
+                        <th class="py-2 px-4">Администратор</th>
+                    </tr>
+                    <tr class="transition-colors duration-300 hover:bg-gray-100">
+                        <th class="py-2 px-4">1</th>
+                        <th class="py-2 px-4"></th>
+                        <th class="py-2 px-4">Роман Никандров</th>
+                        <th class="py-2 px-4">admin</th>
+                        <th class="py-2 px-4">+7(927)865-33-55</th>
+                        <th class="py-2 px-4">chnry@yandex.ru</th>
+                        <th class="py-2 px-4">Администратор</th>
+                    </tr>
+                    <tr class="transition-colors duration-300 hover:bg-gray-100">
+                        <th class="py-2 px-4">1</th>
+                        <th class="py-2 px-4"></th>
+                        <th class="py-2 px-4">Роман Никандров</th>
+                        <th class="py-2 px-4">admin</th>
+                        <th class="py-2 px-4">+7(927)865-33-55</th>
+                        <th class="py-2 px-4">chnry@yandex.ru</th>
+                        <th class="py-2 px-4">Администратор</th>
+                    </tr>
+                    <tr class="transition-colors duration-300 hover:bg-gray-100">
+                        <th class="py-2 px-4">1</th>
+                        <th class="py-2 px-4"></th>
+                        <th class="py-2 px-4">Роман Никандров</th>
+                        <th class="py-2 px-4">admin</th>
+                        <th class="py-2 px-4">+7(927)865-33-55</th>
+                        <th class="py-2 px-4">chnry@yandex.ru</th>
+                        <th class="py-2 px-4">Администратор</th>
+                    </tr>
+                    <tr class="transition-colors duration-300 hover:bg-gray-100">
+                        <th class="py-2 px-4">1</th>
+                        <th class="py-2 px-4"></th>
+                        <th class="py-2 px-4">Роман Никандров</th>
+                        <th class="py-2 px-4">admin</th>
+                        <th class="py-2 px-4">+7(927)865-33-55</th>
+                        <th class="py-2 px-4">chnry@yandex.ru</th>
+                        <th class="py-2 px-4">Администратор</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>    
     
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js" 
     integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
