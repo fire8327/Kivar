@@ -10,6 +10,18 @@ $("#toggler").click(() => {
     $("#toggler > :nth-child(2)").toggleClass("opacity-0")
     $("#toggler > :nth-child(3)").toggleClass("-rotate-45")
 })
+/* kanbanMenu */
+$("#kanbanToggler,#kanbanOverlay").click(() => {
+    $("#kanbanMenu").toggleClass("max-md:top-0")
+    $("#kanbanMenu").toggleClass("max-md:top-full")
+    $("#kanbanMenu").toggleClass("max-md:-translate-y-full")
+    $("#kanbanOverlay").toggleClass("max-md:hidden")
+    $("#kanbanToggler").toggleClass("h-3.5")
+    $("#kanbanToggler").toggleClass("h-5")
+    $("#kanbanToggler > :nth-child(1)").toggleClass("rotate-45")
+    $("#kanbanToggler > :nth-child(2)").toggleClass("opacity-0")
+    $("#kanbanToggler > :nth-child(3)").toggleClass("-rotate-45")
+})
 
 
 /* dropdowns */
