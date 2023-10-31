@@ -50,4 +50,9 @@ $("#cardTabs").tabs()
 /* addWorkers */
 $("#addWorkerToggler, #addWorkerClose").click(() => {
     $("#addWorkerPopup").toggleClass("hidden")
+    /* $(document).keydown(function(e) {
+        if (e.keyCode == 27) {
+            $("#addWorkerPopup").addClass("hidden")
+        }
+    }) */
 })
