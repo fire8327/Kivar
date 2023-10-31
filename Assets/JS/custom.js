@@ -45,10 +45,8 @@ $(".dropdown").each((i, el) => {
 
 /* add class to element (header height) */
 let headerHeight = $("header").height()
-console.log(headerHeight)
 window.addEventListener("resize", () => {
     headerHeight = $("header").height()
-    console.log(headerHeight)
 })
 function addHaderHeight(el) {
     $(el).css("height",`calc(100vh - ${headerHeight}px)`)
