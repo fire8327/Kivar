@@ -1559,6 +1559,10 @@ video {
   gap: 2.25rem;
 }
 
+.gap-y-6 {
+  row-gap: 1.5rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -3163,6 +3167,14 @@ video {
 }
 
 @media not all and (min-width: 1024px) {
+  .max-lg\:order-first {
+    order: -9999;
+  }
+
+  .max-lg\:order-last {
+    order: 9999;
+  }
+
   .max-lg\:w-full {
     width: 100%;
   }
@@ -3203,6 +3215,10 @@ video {
 
   .max-md\:z-50 {
     z-index: 50;
+  }
+
+  .max-md\:order-last {
+    order: 9999;
   }
 
   .max-md\:hidden {
@@ -3350,6 +3366,10 @@ video {
 
   .lg\:items-end {
     align-items: flex-end;
+  }
+
+  .lg\:items-center {
+    align-items: center;
   }
 
   .lg\:gap-2 {
