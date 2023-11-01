@@ -14,7 +14,7 @@
             </a>
             <div id="kanbanMenu" class="flex md:items-center md:grow gap-4 max-md:pb-7 max-md:px-4 transition-all max-md:z-50 duration-500 max-md:absolute max-md:w-full max-md:bg-white max-md:flex-col max-md:top-0 max-md:left-0 max-md:-translate-y-full">
                 <div class="md:grow relative max-md:w-full">
-                    <input type="text" class="py-2.5 pl-5 pr-10 w-full text-sm rounded-lg border border-[#E1E0E0] bg-[#F6F6F6] placeholder-[#757575]" placeholder="Фильтр + поиск">
+                    <input type="text" class="py-2.5 pl-5 pr-10 w-full text-sm rounded-lg border border-[#E1E0E0] bg-[#F6F6F6] placeholder-[#757575]" placeholder="Фильтр">
                     <button class="absolute top-1/2 -translate-y-1/2 right-4">
                         <img src="/Assets/Images/icons/search.svg" alt="">
                     </button>
@@ -56,61 +56,37 @@
                         <button class="text-center py-3.5 rounded-lg border border-[#E1E0E0] w-full bg-[#F6F6F6] text-[#757575] transition-opacity duration-500 lg:opacity-0 lg:group-hover:opacity-100">+ Быстрая задача</button>
                         <img src="/Assets/Images/icons/plusTasks.svg" class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 -z-[1] transition-opacity duration-500  max-lg:opacity-0 lg:group-hover:opacity-0"/>
                     </div>
-                    <div class="flex flex-col gap-4 lg:gap-2.5">
-                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col gap-4 bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#03C761]">
-                            <div class="flex flex-col gap-1">
-                                <p>Название задачи</p>
-                                <p class="text-[#757575]">12345 руб.</p>
-                            </div>
-                            <div class="flex flex-col gap-1">
-                                <a href="/" class="text-[#1F75A8]">Название задачи</a>
-                                <p class="text-[#757575]">01.01.2023</p>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <a href="/" class="text-[#1F75A8]">Дела</a>
-                                <button class="text-[#757575]">+Запланировать</button>
+                    <div class="flex flex-col gap-2.5">
+                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#03C761]">
+                            <p class="text-right">Название задачи</p>
+                            <div class="flex items-end justify-between text-[#757575]">
+                                <img src="/Assets/Images/kanban/card1.png" alt="" class="w-[52px] h-[52px]">
+                                <p>123 шт.</p>
+                                <p>12345 руб.</p>
                             </div>
                         </div>
-                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col gap-4 bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#FE665F]">
-                            <div class="flex flex-col gap-1">
-                                <p>Название задачи</p>
-                                <p class="text-[#757575]">12345 руб.</p>
-                            </div>
-                            <div class="flex flex-col gap-1">
-                                <a href="/" class="text-[#1F75A8]">Название задачи</a>
-                                <p class="text-[#757575]">01.01.2023</p>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <a href="/" class="text-[#1F75A8]">Дела</a>
-                                <button class="text-[#757575]">+Запланировать</button>
+                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#FBB84B]">
+                            <p class="text-right">Название задачи</p>
+                            <div class="flex items-end justify-between text-[#757575]">
+                                <img src="/Assets/Images/kanban/card1.png" alt="" class="w-[52px] h-[52px]">
+                                <p>123 шт.</p>
+                                <p>12345 руб.</p>
                             </div>
                         </div>
-                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col gap-4 bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#FBB84B]">
-                            <div class="flex flex-col gap-1">
-                                <p>Название задачи</p>
-                                <p class="text-[#757575]">12345 руб.</p>
-                            </div>
-                            <div class="flex flex-col gap-1">
-                                <a href="/" class="text-[#1F75A8]">Название задачи</a>
-                                <p class="text-[#757575]">01.01.2023</p>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <a href="/" class="text-[#1F75A8]">Дела</a>
-                                <button class="text-[#757575]">+Запланировать</button>
+                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#FE665F]">
+                            <p class="text-right">Название задачи</p>
+                            <div class="flex items-end justify-between text-[#757575]">
+                                <img src="/Assets/Images/kanban/card1.png" alt="" class="w-[52px] h-[52px]">
+                                <p>123 шт.</p>
+                                <p>12345 руб.</p>
                             </div>
                         </div>
-                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col gap-4 bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#03C761]">
-                            <div class="flex flex-col gap-1">
-                                <p>Название задачи</p>
-                                <p class="text-[#757575]">12345 руб.</p>
-                            </div>
-                            <div class="flex flex-col gap-1">
-                                <a href="/" class="text-[#1F75A8]">Название задачи</a>
-                                <p class="text-[#757575]">01.01.2023</p>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <a href="/" class="text-[#1F75A8]">Дела</a>
-                                <button class="text-[#757575]">+Запланировать</button>
+                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#03C761]">
+                            <p class="text-right">Название задачи</p>
+                            <div class="flex items-end justify-between text-[#757575]">
+                                <img src="/Assets/Images/kanban/card1.png" alt="" class="w-[52px] h-[52px]">
+                                <p>123 шт.</p>
+                                <p>12345 руб.</p>
                             </div>
                         </div>
                     </div>
@@ -124,47 +100,29 @@
                         <button class="text-center py-3.5 rounded-lg border border-[#E1E0E0] w-full bg-[#F6F6F6] text-[#757575] transition-opacity duration-500 lg:opacity-0 lg:group-hover:opacity-100">+ Быстрая задача</button>
                         <img src="/Assets/Images/icons/plusTasks.svg" class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 -z-[1] transition-opacity duration-500  max-lg:opacity-0 lg:group-hover:opacity-0"/>
                     </div>
-                    <div class="flex flex-col gap-4 lg:gap-2.5">
-                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col gap-4 bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#03C761]">
-                            <div class="flex flex-col gap-1">
-                                <p>Название задачи</p>
-                                <p class="text-[#757575]">12345 руб.</p>
-                            </div>
-                            <div class="flex flex-col gap-1">
-                                <a href="/" class="text-[#1F75A8]">Название задачи</a>
-                                <p class="text-[#757575]">01.01.2023</p>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <a href="/" class="text-[#1F75A8]">Дела</a>
-                                <button class="text-[#757575]">+Запланировать</button>
+                    <div class="flex flex-col gap-2.5">
+                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#03C761]">
+                            <p class="text-right">Название задачи</p>
+                            <div class="flex items-end justify-between text-[#757575]">
+                                <img src="/Assets/Images/kanban/card1.png" alt="" class="w-[52px] h-[52px]">
+                                <p>123 шт.</p>
+                                <p>12345 руб.</p>
                             </div>
                         </div>
-                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col gap-4 bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#FE665F]">
-                            <div class="flex flex-col gap-1">
-                                <p>Название задачи</p>
-                                <p class="text-[#757575]">12345 руб.</p>
-                            </div>
-                            <div class="flex flex-col gap-1">
-                                <a href="/" class="text-[#1F75A8]">Название задачи</a>
-                                <p class="text-[#757575]">01.01.2023</p>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <a href="/" class="text-[#1F75A8]">Дела</a>
-                                <button class="text-[#757575]">+Запланировать</button>
+                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#03C761]">
+                            <p class="text-right">Название задачи</p>
+                            <div class="flex items-end justify-between text-[#757575]">
+                                <img src="/Assets/Images/kanban/card1.png" alt="" class="w-[52px] h-[52px]">
+                                <p>123 шт.</p>
+                                <p>12345 руб.</p>
                             </div>
                         </div>
-                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col gap-4 bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#03C761]">
-                            <div class="flex flex-col gap-1">
-                                <p>Название задачи</p>
-                                <p class="text-[#757575]">12345 руб.</p>
-                            </div>
-                            <div class="flex flex-col gap-1">
-                                <a href="/" class="text-[#1F75A8]">Название задачи</a>
-                                <p class="text-[#757575]">01.01.2023</p>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <a href="/" class="text-[#1F75A8]">Дела</a>
-                                <button class="text-[#757575]">+Запланировать</button>
+                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#FBB84B]">
+                            <p class="text-right">Название задачи</p>
+                            <div class="flex items-end justify-between text-[#757575]">
+                                <img src="/Assets/Images/kanban/card1.png" alt="" class="w-[52px] h-[52px]">
+                                <p>123 шт.</p>
+                                <p>12345 руб.</p>
                             </div>
                         </div>
                     </div>
@@ -178,33 +136,13 @@
                         <button class="text-center py-3.5 rounded-lg border border-[#E1E0E0] w-full bg-[#F6F6F6] text-[#757575] transition-opacity duration-500 lg:opacity-0 lg:group-hover:opacity-100">+ Быстрая задача</button>
                         <img src="/Assets/Images/icons/plusTasks.svg" class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 -z-[1] transition-opacity duration-500  max-lg:opacity-0 lg:group-hover:opacity-0"/>
                     </div>
-                    <div class="flex flex-col gap-4 lg:gap-2.5">
-                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col gap-4 bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#03C761]">
-                            <div class="flex flex-col gap-1">
-                                <p>Название задачи</p>
-                                <p class="text-[#757575]">12345 руб.</p>
-                            </div>
-                            <div class="flex flex-col gap-1">
-                                <a href="/" class="text-[#1F75A8]">Название задачи</a>
-                                <p class="text-[#757575]">01.01.2023</p>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <a href="/" class="text-[#1F75A8]">Дела</a>
-                                <button class="text-[#757575]">+Запланировать</button>
-                            </div>
-                        </div>
-                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col gap-4 bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#FE665F]">
-                            <div class="flex flex-col gap-1">
-                                <p>Название задачи</p>
-                                <p class="text-[#757575]">12345 руб.</p>
-                            </div>
-                            <div class="flex flex-col gap-1">
-                                <a href="/" class="text-[#1F75A8]">Название задачи</a>
-                                <p class="text-[#757575]">01.01.2023</p>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <a href="/" class="text-[#1F75A8]">Дела</a>
-                                <button class="text-[#757575]">+Запланировать</button>
+                    <div class="flex flex-col gap-2.5">
+                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#03C761]">
+                            <p class="text-right">Название задачи</p>
+                            <div class="flex items-end justify-between text-[#757575]">
+                                <img src="/Assets/Images/kanban/card1.png" alt="" class="w-[52px] h-[52px]">
+                                <p>123 шт.</p>
+                                <p>12345 руб.</p>
                             </div>
                         </div>
                     </div>
@@ -218,73 +156,57 @@
                         <button class="text-center py-3.5 rounded-lg border border-[#E1E0E0] w-full bg-[#F6F6F6] text-[#757575] transition-opacity duration-500 lg:opacity-0 lg:group-hover:opacity-100">+ Быстрая задача</button>
                         <img src="/Assets/Images/icons/plusTasks.svg" class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 -z-[1] transition-opacity duration-500  max-lg:opacity-0 lg:group-hover:opacity-0"/>
                     </div>
-                    <div class="flex flex-col gap-4 lg:gap-2.5">
-                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col gap-4 bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#03C761]">
-                            <div class="flex flex-col gap-1">
-                                <p>Название задачи</p>
-                                <p class="text-[#757575]">12345 руб.</p>
-                            </div>
-                            <div class="flex flex-col gap-1">
-                                <a href="/" class="text-[#1F75A8]">Название задачи</a>
-                                <p class="text-[#757575]">01.01.2023</p>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <a href="/" class="text-[#1F75A8]">Дела</a>
-                                <button class="text-[#757575]">+Запланировать</button>
+                    <div class="flex flex-col gap-2.5">
+                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#03C761]">
+                            <p class="text-right">Название задачи</p>
+                            <div class="flex items-end justify-between text-[#757575]">
+                                <img src="/Assets/Images/kanban/card1.png" alt="" class="w-[52px] h-[52px]">
+                                <p>123 шт.</p>
+                                <p>12345 руб.</p>
                             </div>
                         </div>
-                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col gap-4 bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#FBB84B]">
-                            <div class="flex flex-col gap-1">
-                                <p>Название задачи</p>
-                                <p class="text-[#757575]">12345 руб.</p>
-                            </div>
-                            <div class="flex flex-col gap-1">
-                                <a href="/" class="text-[#1F75A8]">Название задачи</a>
-                                <p class="text-[#757575]">01.01.2023</p>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <a href="/" class="text-[#1F75A8]">Дела</a>
-                                <button class="text-[#757575]">+Запланировать</button>
-                            </div>
-                        </div>
-                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col gap-4 bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#FBB84B]">
-                            <div class="flex flex-col gap-1">
-                                <p>Название задачи</p>
-                                <p class="text-[#757575]">12345 руб.</p>
-                            </div>
-                            <div class="flex flex-col gap-1">
-                                <a href="/" class="text-[#1F75A8]">Название задачи</a>
-                                <p class="text-[#757575]">01.01.2023</p>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <a href="/" class="text-[#1F75A8]">Дела</a>
-                                <button class="text-[#757575]">+Запланировать</button>
+                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#FBB84B]">
+                            <p class="text-right">Название задачи</p>
+                            <div class="flex items-end justify-between text-[#757575]">
+                                <img src="/Assets/Images/kanban/card1.png" alt="" class="w-[52px] h-[52px]">
+                                <p>123 шт.</p>
+                                <p>12345 руб.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="flex flex-col gap-4">
-                    <div class="rounded-lg flex flex-col py-1.5 gap-0.5 items-center text-center bg-[#FF5752]">
+                    <div class="rounded-lg flex flex-col py-1.5 gap-0.5 items-center text-center bg-[#FF5752] text-white">
                         <p class="text-xl">Заголовок</p>
-                        <p class="text-[#757575]">2 сделки: <span>5000руб.</span></p>
+                        <p>2 сделки: <span>5000руб.</span></p>
                     </div>
                     <div class="group w-full relative">
                         <button class="text-center py-3.5 rounded-lg border border-[#E1E0E0] w-full bg-[#F6F6F6] text-[#757575] transition-opacity duration-500 lg:opacity-0 lg:group-hover:opacity-100">+ Быстрая задача</button>
                         <img src="/Assets/Images/icons/plusTasks.svg" class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 -z-[1] transition-opacity duration-500  max-lg:opacity-0 lg:group-hover:opacity-0"/>
                     </div>
-                    <div class="flex flex-col gap-4 lg:gap-2.5">
-                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col gap-4 bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#03C761]">
-                            <div class="flex flex-col gap-1">
-                                <p>Название задачи</p>
-                                <p class="text-[#757575]">12345 руб.</p>
+                    <div class="flex flex-col gap-2.5">
+                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#03C761]">
+                            <p class="text-right">Название задачи</p>
+                            <div class="flex items-end justify-between text-[#757575]">
+                                <img src="/Assets/Images/kanban/card1.png" alt="" class="w-[52px] h-[52px]">
+                                <p>123 шт.</p>
+                                <p>12345 руб.</p>
                             </div>
-                            <div class="flex flex-col gap-1">
-                                <a href="/" class="text-[#1F75A8]">Название задачи</a>
-                                <p class="text-[#757575]">01.01.2023</p>
+                        </div>
+                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#03C761]">
+                            <p class="text-right">Название задачи</p>
+                            <div class="flex items-end justify-between text-[#757575]">
+                                <img src="/Assets/Images/kanban/card1.png" alt="" class="w-[52px] h-[52px]">
+                                <p>123 шт.</p>
+                                <p>12345 руб.</p>
                             </div>
-                            <div class="flex items-center justify-between">
-                                <a href="/" class="text-[#1F75A8]">Дела</a>
-                                <button class="text-[#757575]">+Запланировать</button>
+                        </div>
+                        <div class="rounded-r-lg shadow-[0px_4px_4px_0px_#00000040] py-2 px-4 flex flex-col bg-white relative before:absolute before:left-0 before:top-0 before:w-[5px] before:h-full before:bg-[#FE665F]">
+                            <p class="text-right">Название задачи</p>
+                            <div class="flex items-end justify-between text-[#757575]">
+                                <img src="/Assets/Images/kanban/card1.png" alt="" class="w-[52px] h-[52px]">
+                                <p>123 шт.</p>
+                                <p>12345 руб.</p>
                             </div>
                         </div>
                     </div>

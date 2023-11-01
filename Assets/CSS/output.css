@@ -710,32 +710,16 @@ video {
   right: 1rem;
 }
 
-.top-0 {
-  top: 0px;
-}
-
 .top-1\/2 {
   top: 50%;
 }
 
-.top-\[calc\(100\%\+10px\)\] {
-  top: calc(100% + 10px);
-}
-
-.top-20 {
-  top: 5rem;
-}
-
-.top-2 {
-  top: 0.5rem;
-}
-
-.top-24 {
-  top: 6rem;
-}
-
 .top-\[82px\] {
   top: 82px;
+}
+
+.top-\[calc\(100\%\+10px\)\] {
+  top: calc(100% + 10px);
 }
 
 .isolate {
@@ -922,6 +906,10 @@ video {
   height: 30px;
 }
 
+.h-\[52px\] {
+  height: 52px;
+}
+
 .h-full {
   height: 100%;
 }
@@ -948,6 +936,10 @@ video {
 
 .w-\[30px\] {
   width: 30px;
+}
+
+.w-\[52px\] {
+  width: 52px;
 }
 
 .w-fit {
@@ -2064,16 +2056,6 @@ video {
   background-color: rgb(191 231 244 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#CBCBCB\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 203 203 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#E0EF9E\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(224 239 158 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#E71616\] {
   --tw-bg-opacity: 1;
   background-color: rgb(231 22 22 / var(--tw-bg-opacity));
@@ -2087,16 +2069,6 @@ video {
 .bg-\[\#F7F7FA\] {
   --tw-bg-opacity: 1;
   background-color: rgb(247 247 250 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#FEEC9A\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 236 154 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#FF5752\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 87 82 / var(--tw-bg-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
@@ -2125,6 +2097,26 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#CBCBCB\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 203 203 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FEEC9A\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 236 154 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#E0EF9E\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 239 158 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FF5752\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 87 82 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -3347,10 +3339,6 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:hidden {
-    display: none;
-  }
-
   .lg\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
