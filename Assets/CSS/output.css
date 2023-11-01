@@ -3348,6 +3348,10 @@ video {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
+  .lg\:items-end {
+    align-items: flex-end;
+  }
+
   .lg\:gap-2 {
     gap: 0.5rem;
   }
@@ -3358,6 +3362,10 @@ video {
 
   .lg\:gap-5 {
     gap: 1.25rem;
+  }
+
+  .lg\:text-right {
+    text-align: right;
   }
 
   .lg\:opacity-0 {
