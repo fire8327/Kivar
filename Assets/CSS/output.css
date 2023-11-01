@@ -3212,9 +3212,22 @@ video {
     gap: 1.5rem;
   }
 
+  .max-md\:border-x {
+    border-left-width: 1px;
+    border-right-width: 1px;
+  }
+
+  .max-md\:border-b {
+    border-bottom-width: 1px;
+  }
+
   .max-md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .max-md\:first\:border-t:first-child {
+    border-top-width: 1px;
   }
 }
 
