@@ -12,7 +12,6 @@ $("#toggler").click(() => {
 })
 
 
-
 /* dropdowns */
 $(".dropdown").each((i, el) => {
     const dropdownToggler = $(el).find(".dropdownToggler")
